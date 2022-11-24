@@ -28,12 +28,12 @@
                <span v-if="quantity === 0">
                  Rupture de stock
                 </span>
-                <span> 
+                <!-- <span> 
                  
                   {{ajt}}
                 {{totalPrix}}
                 {{ totalProducts }}
-              </span>
+              </span> -->
             </fieldset>
               
               <!-- <h4> Total des produits:{{ totalProducts }}</h4> 
