@@ -54,12 +54,18 @@ export default {
  
 }
 </script>
-<style scoped>
+<style  scoped >
  .home{
   font-family: "Times New Roman", Times, serif;
+ 
  }
  .divfieldset {
   padding: 20px;
 }
+.home{
+  margin-top: 0px;
+  padding: 0px;
+}
 </style>
+
 

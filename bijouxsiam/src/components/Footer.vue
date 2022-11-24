@@ -1,4 +1,5 @@
 <template>
+  <div class="ffooter">
 <footer>
    <section class="newsletter">
         <div class="container">
@@ -52,6 +53,7 @@
       </div>
       </div>
     </footer>
+  </div>
 
 </template>
 
@@ -66,6 +68,7 @@ export default {
 }
 </script>
 <style scoped>
+
 footer {
   background-color: #fff;
   color: gray;

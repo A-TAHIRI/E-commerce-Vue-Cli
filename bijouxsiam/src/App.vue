@@ -1,9 +1,9 @@
 <template>
-  <Header/>
+  <Header />
 
   <router-view/>
 
-  <Footer/>
+  <Footer />
 
 </template>
 
@@ -26,3 +26,6 @@ export default {
   }
 }
 </script>
+<style src="../public/css/style.css">
+
+</style>

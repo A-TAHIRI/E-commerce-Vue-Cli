@@ -115,7 +115,7 @@
             <a class="bpanier" href="#"
               ><i class="fa-solid fa-bag-shopping"></i
             > 
-              <span id="notification">{{count}}</span>  
+              <span id="notification">{{produitpanier}}</span>  
               
               <span id="prixtotal">{{ totalPrix }} €</span> 
               <!-- .toFixed(2) -->
@@ -145,13 +145,11 @@ export default {
     id: Number,
     titre:String,
     image:String,
- 
-   
-
+    
   }
-  
-  
+
 }
+
 
 </script>
 
@@ -160,6 +158,8 @@ export default {
 .header {
   height: auto;
   font-family: "Times New Roman", Times, serif;
+  padding: 0px;
+  margin: 0px;
 }
 .navbar {
   background-color: #e7d4cf;

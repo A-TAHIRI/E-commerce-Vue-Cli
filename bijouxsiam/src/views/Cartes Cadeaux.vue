@@ -1,6 +1,6 @@
 <template>
-
-<div class=" container  Cartes Cadeaux">
+<div class="cartcad">
+<div class=" container  text-center Cartes Cadeaux">
         <div class="row justify-content-center">
             <div class="col-ms-12 col-md-6 col-lg-6 carte ">
                 <img class="imgcarte" src= "../assets/carte8.png"    alt=""  >
@@ -21,12 +21,14 @@
     </div>
     <div class=" container  Cartes Cadeaux">
         <div class="row justify-content-center">
-         <Carte  v-for="(carte,index) in cartes" :key="index" :id="carte.id"  :image="carte.image"/>
+
+         <Carte v-for="(carte,index) in cartes" :key="index" :id="carte.id"  :image="carte.image"/>
 
         </div>
-       
     </div>
+</div>
 </template>
+
 <script>
 import Carte from '@/components/Carte.vue'
 
@@ -81,6 +83,9 @@ export default {
 }
 </script>
 <style scoped>
+.cartcad{
+    text-align: center;
+}
 .cadeaux{
     z-index: 2;
    margin-top: 160px;
@@ -98,5 +103,6 @@ export default {
    width: 830px;
    height: 500px;
     padding: 0px;
+    text-align: center;
 }
 </style>

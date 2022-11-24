@@ -7,7 +7,7 @@
               <!-- <img id="photo2" :src="require(`@/assets/${image2}`)" alt="bijoux" height=""></img> -->
             </a>
              </article >
-                <button  v-if="quantity>0"  @click="quantity -=1 ; count++ ; ajout++ " class=" ajouter" href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                <button  v-if="quantity>0"  @click="quantity -=1; bar++; count++ ;(increment()); (ajouter())   " class=" ajouter" href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z"/>
              </svg> </button>
 
@@ -18,7 +18,7 @@
                    {{description}}
                   </span>
                   <br>
-                  <span class="prix"> Prix: {{prix}}€ {{quantity}} {{count}} {{(count*prix).toFixed(2) }}</span><br>
+                  <span class="prix"> Prix: {{prix}}€ {{quantity}} {{count}} {{(count*prix).toFixed(2) }}  </span><br>
                 <span>
                    <button id="voirplus" type="button"  class="btn btn-secondary ">Voir Plus</button>
                 </span>
@@ -28,13 +28,16 @@
                  Rupture de stock
                 </span>
                 <span> 
-                {{totalPrix}}
+                 
+                  {{ajt}}
+                {{total_Prix}}
                 {{ totalProducts }}
               </span>
             </fieldset>
-             <!-- <h4> Total des produits:{{ totalProducts }}</h4> 
-            <h5> Total Prix:{{totalPrix}} €</h5>  -->
-        
+              
+              <!-- <h4> Total des produits:{{ totalProducts }}</h4> 
+            <h5> Total Prix:{{totalPrix}} €</h5> 
+         -->
 
 
 </template>
@@ -52,25 +55,43 @@ export default {
     description:Number,
     count:Number,
    
+   
 
   },
   data(){
           return {
               products:[],
+              ajt:17,
+              bar:0
             
           }
     },
+    methods:{
+      increment(){
+        return this.ajt++;
+      }
+
+    },
     computed: {
     totalProducts() {
-      return this.products.reduce((sum,quantity) => {
+      return this.products.reduce((sum, product) => {
         // sum += product.quantity
         // return sum
         return sum + product.quantity;
       }, 0);
     },
+
+    // ajouter(){
+    //   return this.$store.state.ajout;
+     
+    // },
+    // total_prix(){
+    //   return this.$store.getters. TotalPrix;
+    // },
+
     totalPrix() {
-      return this.products.reduce((total, product) => {
-        return total+ product.count *product.prix;
+      return this.products.reduce((total, count,prix) => {
+        return total+ (count*prix);
       }, 0);
     },
   },

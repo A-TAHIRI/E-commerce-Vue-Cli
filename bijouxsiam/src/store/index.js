@@ -3,14 +3,15 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     // products:[],
-    // ajout:0,
-
+    // total:0,
   },
   getters: {
-    // ajouter: state => {
-    //   ajout++
-    //   return state.ajout
-    // }
+  // TotalPrix(state){
+  //   return state.count*prix
+  //   },
+    
+  
+
   },
   mutations: {
   },
