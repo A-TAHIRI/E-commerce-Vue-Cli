@@ -3,7 +3,7 @@
     <div class="Bijouxvue">
   
       
-      <LogoBijoux/>
+      <!-- <LogoBijoux/> -->
      
       <div class=" divfieldset container-fluid">
             <div   class="row justify-content-center  ">

@@ -3,8 +3,9 @@
             <fieldset  class=" col-ms-12 col-md-5 col-lg-3  fieldset" >
              <article class="f1"> 
               
-              <a href="#"><img id="photo1" :src="require(`@/assets/${image}`)" alt="bijoux" height="">  
-              <!-- <img id="photo2" :src="require(`@/assets/${image2}`)" alt="bijoux" height=""></img> -->
+              <a href="#">
+                <img id="photo1" :src="require(`@/assets/${image}`)" alt="bijoux" height="">  
+              <!-- <img id="photo2" :src="require(`@/assets/${image2}`)" alt="bijoux" height=""> -->
             </a>
              </article >
                 <button  v-if="quantity>0"  @click="quantity -=1; bar++; count++ ;(increment()); (ajouter())   " class=" ajouter" href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
@@ -30,7 +31,7 @@
                 <span> 
                  
                   {{ajt}}
-                {{total_Prix}}
+                {{totalPrix}}
                 {{ totalProducts }}
               </span>
             </fieldset>
@@ -95,7 +96,7 @@ export default {
       }, 0);
     },
   },
-  // return:totalPrix(id="prixtotal")
+ 
  
 }
 </script>
@@ -114,28 +115,36 @@ export default {
 article.f1 {
   background-size: 100% 100%;
 }
-/* #photo2 {
-  z-index: 2;
-  margin-top: -350px;
 
-  height: 100%;
-  width: 100%;
-  padding-top: 0px;
-} */
-#photo1 {
+.f1 #photo1 {
   cursor: pointer;
   height: 100%;
   width: 100%;
+  /* opacity:1;
+  transition:all .5s ease-out 0s;
+  z-index: 1; */
 }
+/* .f1:hover #photo1{
+  opacity:0;
+  z-index: 0;
+} */
 
 
-#photo2 {
-  visibility: hidden;
-}
+/* .f1 #photo2 {
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  transition:all .5s ease-out 0s;
+  z-index: 0;
 
-.f1:hover #photo2 {
-  visibility: visible;
 }
+.f1:hover #photo2{
+  opacity:1;
+  z-index: 1;
+} */
+
+
 
 #voirplus {
   visibility: hidden;

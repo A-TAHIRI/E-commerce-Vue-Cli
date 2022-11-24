@@ -1,5 +1,5 @@
 <template>
-    <div class="carousel-item active" data-bs-interval="5000">
+    <div class="carousel-item active" data-bs-interval="3000">
                   <img
                   :src="require(`@/assets/${image}`)"
                     class="d-block w-100 imgcarosel"
