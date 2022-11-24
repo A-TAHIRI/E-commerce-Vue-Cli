@@ -3,7 +3,7 @@
     <div class="Bijouxvue">
   
       
-      <!-- <LogoBijoux/> -->
+      <LogoB/>
      
       <div class=" divfieldset container-fluid">
             <div   class="row justify-content-center  ">
@@ -22,7 +22,7 @@
   <script>
   // @ is an alias to /src
  
-  import LogoBijoux from '@/components/LogoBijoux.vue'
+  import LogoB from '@/components/LogoB.vue'
   
   import Product from '@/components/Product.vue'
   import Livraison from '@/components/Livraison.vue'
@@ -31,7 +31,7 @@
   export default {
     name:'Cartes Cadeaux',
     components: {
-      LogoBijoux,
+      LogoB,
 
       Product,
       Livraison,

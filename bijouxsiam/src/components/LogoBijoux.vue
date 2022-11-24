@@ -7,25 +7,17 @@
       </div>
      </div>
      <p class="gratuite">Livraison gratuite pour les commandes supérieures à 50 €</p>
-     <div class=" container-flid texte-center divvideo ">
-      <div class="row align-items-center">
-        <div class="col-mx-12 col-ms-12 col-md-4 col-lg-4 ">
-       <p class="coeur">FAITES-VOUS PLAISIR  </p> 
-         <p  id ="coeur"  class="coeur">Nos sélections coup de coeur </p>
-       </div>
-       <div class=" col-mx-12 col-ms-12 col-md-4 col-lg-4">
-                
-      <video class="video"
-         controls
-         src="@/assets/vidéo1.mp4"
-         autoplay
-         loop
-         muted>
-         
-      </video>
-     
-    </div>
-     </div>
+     <div class= "container-fluid  texte-center divvideo">
+          <div class="row align-items-center">
+              <div class="col-mx-12 col-ms-12 col-md-4 col-lg-4 ">
+                 <p class="coeur">FAITES-VOUS PLAISIR  </p> 
+                 <p  id ="coeur"  class="coeur">Nos sélections coup de coeur </p>
+               </div>
+            <div class=" col-mx-12 col-ms-12 col-md-4 col-lg-4">
+                      
+            <video class="video" controls src="@/assets/vidéo1.mp4"  autoplay loop muted></video>
+          </div>
+        </div>
     </div>
       
 </template>
@@ -113,10 +105,10 @@ export default {
 .logo-bijoux {
   color: #cfa340;
   height: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
   background-color: #513e35;
-  margin: 10px 20px 0px 20px;
+  margin: 10px 0px 0px 0px;
   border-radius: 10px;
   box-shadow: 0px 0px 40px gray;
   text-align: center;
