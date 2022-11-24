@@ -91,17 +91,17 @@
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
                </footera>
 
-              <!-- <form class="d-flex mt-3" role="search">
+              <form class="d-flex mt-3" role="search">
                 <input
                   class="form-control me-2"
-                  type="search"S
+                  type="search"
                   placeholder="Search"
                   aria-label="Search"
                 />
                 <button class="btn btn-outline-success" type="submit">
                   Search
                 </button>
-              </form> --> 
+              </form> 
             </div>
           </div>
            <img src="../assets/logo2.png" alt="logo" width="250" height="200" /> 
